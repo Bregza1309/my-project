@@ -2,8 +2,8 @@ import { Platform , StyleSheet , StatusBar } from "react-native";
 export default StyleSheet.create({
     container:{
         flex:1,
-        flexDirection: "column",
-        alignItems: "center",
+        flexDirection: "row",
+        alignItems:'center',
         justifyContent: "space-around",
         ...Platform.select({
             ios: {paddingTop:20},
@@ -11,9 +11,9 @@ export default StyleSheet.create({
         })
     },
     box: {
-        width: 300,   
-        height: 100,
+        width: 100,
         justifyContent: "center",
+        alignSelf:"stretch",
         alignItems: "center",
         backgroundColor: "lightgray",
         borderWidth: 1,

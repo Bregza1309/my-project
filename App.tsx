@@ -1,30 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { Text, View , StatusBar } from 'react-native';
 import styles from './styles';
+import { Box } from './Box';
 export default function App() {
   return (
     <View style={styles.container}>
-
-      <View style={styles.box}>
-
-        <Text style={styles.boxText}>#1</Text>
-
-      </View>
-
-      <View style={styles.box}>
-
-        <Text style={styles.boxText}>#2</Text>
-
-      </View>
-
-      <View style={styles.box}>
-
-        <Text style={styles.boxText}>#3</Text>
-
-      </View>
-
+      <Box>#1</Box>
+      <Box>#2</Box>
     </View>
-
   );
 }
 
